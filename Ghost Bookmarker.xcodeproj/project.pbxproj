@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60B228202A712BB7005D4B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B2281F2A712BB7005D4B0A /* AppDelegate.swift */; };
+		60B228222A712BB7005D4B0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B228212A712BB7005D4B0A /* SceneDelegate.swift */; };
+		60B228252A712BB7005D4B0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B228232A712BB7005D4B0A /* LaunchScreen.storyboard */; };
+		60B228282A712BB7005D4B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B228262A712BB7005D4B0A /* Main.storyboard */; };
+		60B228312A712BB7005D4B0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B228302A712BB7005D4B0A /* AppDelegate.swift */; };
+		60B228342A712BB7005D4B0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60B228322A712BB7005D4B0A /* Main.storyboard */; };
+		60B2283C2A712BB7005D4B0A /* Ghost Bookmarker Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 60B2283B2A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		60B228462A712BB7005D4B0A /* Ghost Bookmarker Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 60B228452A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		60B2284C2A712BB7005D4B0A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 60B2280F2A712BB6005D4B0A /* Main.html */; };
+		60B2284D2A712BB7005D4B0A /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 60B2280F2A712BB6005D4B0A /* Main.html */; };
+		60B2284E2A712BB7005D4B0A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B228112A712BB6005D4B0A /* Icon.png */; };
+		60B2284F2A712BB7005D4B0A /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 60B228112A712BB6005D4B0A /* Icon.png */; };
+		60B228502A712BB7005D4B0A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 60B228122A712BB6005D4B0A /* Style.css */; };
+		60B228512A712BB7005D4B0A /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 60B228122A712BB6005D4B0A /* Style.css */; };
+		60B228522A712BB7005D4B0A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 60B228132A712BB6005D4B0A /* Script.js */; };
+		60B228532A712BB7005D4B0A /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 60B228132A712BB6005D4B0A /* Script.js */; };
+		60B228542A712BB7005D4B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B228142A712BB6005D4B0A /* ViewController.swift */; };
+		60B228552A712BB7005D4B0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B228142A712BB6005D4B0A /* ViewController.swift */; };
+		60B228562A712BB7005D4B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B228152A712BB7005D4B0A /* Assets.xcassets */; };
+		60B228572A712BB7005D4B0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60B228152A712BB7005D4B0A /* Assets.xcassets */; };
+		60B228582A712BB7005D4B0A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B228172A712BB7005D4B0A /* SafariWebExtensionHandler.swift */; };
+		60B228592A712BB7005D4B0A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B228172A712BB7005D4B0A /* SafariWebExtensionHandler.swift */; };
+		60B228702A712BB7005D4B0A /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286B2A712BB7005D4B0A /* dist */; };
+		60B228712A712BB7005D4B0A /* _metadata in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286C2A712BB7005D4B0A /* _metadata */; };
+		60B228722A712BB7005D4B0A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286D2A712BB7005D4B0A /* icons */; };
+		60B228732A712BB7005D4B0A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286E2A712BB7005D4B0A /* manifest.json */; };
+		60B228742A712BB7005D4B0A /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286F2A712BB7005D4B0A /* pages */; };
+		60B228752A712BB7005D4B0A /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286B2A712BB7005D4B0A /* dist */; };
+		60B228762A712BB7005D4B0A /* _metadata in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286C2A712BB7005D4B0A /* _metadata */; };
+		60B228772A712BB7005D4B0A /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286D2A712BB7005D4B0A /* icons */; };
+		60B228782A712BB7005D4B0A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286E2A712BB7005D4B0A /* manifest.json */; };
+		60B228792A712BB7005D4B0A /* pages in Resources */ = {isa = PBXBuildFile; fileRef = 60B2286F2A712BB7005D4B0A /* pages */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60B2283D2A712BB7005D4B0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60B228092A712BB6005D4B0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60B2283A2A712BB7005D4B0A;
+			remoteInfo = "Ghost Bookmarker Extension (iOS)";
+		};
+		60B228472A712BB7005D4B0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60B228092A712BB6005D4B0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60B228442A712BB7005D4B0A;
+			remoteInfo = "Ghost Bookmarker Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60B2285F2A712BB7005D4B0A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				60B2283C2A712BB7005D4B0A /* Ghost Bookmarker Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B228662A712BB7005D4B0A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				60B228462A712BB7005D4B0A /* Ghost Bookmarker Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60B228102A712BB6005D4B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		60B228112A712BB6005D4B0A /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		60B228122A712BB6005D4B0A /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		60B228132A712BB6005D4B0A /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		60B228142A712BB6005D4B0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60B228152A712BB7005D4B0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60B228172A712BB7005D4B0A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		60B2281C2A712BB7005D4B0A /* Ghost Bookmarker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ghost Bookmarker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B2281F2A712BB7005D4B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60B228212A712BB7005D4B0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		60B228242A712BB7005D4B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		60B228272A712BB7005D4B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60B228292A712BB7005D4B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B2282E2A712BB7005D4B0A /* Ghost Bookmarker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ghost Bookmarker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B228302A712BB7005D4B0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		60B228332A712BB7005D4B0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60B228352A712BB7005D4B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B228362A712BB7005D4B0A /* Ghost Bookmarker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ghost Bookmarker.entitlements"; sourceTree = "<group>"; };
+		60B2283B2A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ghost Bookmarker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B228402A712BB7005D4B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B228452A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Ghost Bookmarker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B2284A2A712BB7005D4B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60B2284B2A712BB7005D4B0A /* Ghost Bookmarker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Ghost Bookmarker.entitlements"; sourceTree = "<group>"; };
+		60B2286B2A712BB7005D4B0A /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = Resources/dist; sourceTree = "<group>"; };
+		60B2286C2A712BB7005D4B0A /* _metadata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _metadata; path = Resources/_metadata; sourceTree = "<group>"; };
+		60B2286D2A712BB7005D4B0A /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		60B2286E2A712BB7005D4B0A /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		60B2286F2A712BB7005D4B0A /* pages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pages; path = Resources/pages; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60B228192A712BB7005D4B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B2282B2A712BB7005D4B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B228382A712BB7005D4B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B228422A712BB7005D4B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60B228082A712BB6005D4B0A = {
+			isa = PBXGroup;
+			children = (
+				60B2280D2A712BB6005D4B0A /* Shared (App) */,
+				60B228162A712BB7005D4B0A /* Shared (Extension) */,
+				60B2281E2A712BB7005D4B0A /* iOS (App) */,
+				60B2282F2A712BB7005D4B0A /* macOS (App) */,
+				60B2283F2A712BB7005D4B0A /* iOS (Extension) */,
+				60B228492A712BB7005D4B0A /* macOS (Extension) */,
+				60B2281D2A712BB7005D4B0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60B2280D2A712BB6005D4B0A /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				60B228142A712BB6005D4B0A /* ViewController.swift */,
+				60B228152A712BB7005D4B0A /* Assets.xcassets */,
+				60B2280E2A712BB6005D4B0A /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		60B2280E2A712BB6005D4B0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60B2280F2A712BB6005D4B0A /* Main.html */,
+				60B228112A712BB6005D4B0A /* Icon.png */,
+				60B228122A712BB6005D4B0A /* Style.css */,
+				60B228132A712BB6005D4B0A /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		60B228162A712BB7005D4B0A /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				60B2286A2A712BB7005D4B0A /* Resources */,
+				60B228172A712BB7005D4B0A /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		60B2281D2A712BB7005D4B0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60B2281C2A712BB7005D4B0A /* Ghost Bookmarker.app */,
+				60B2282E2A712BB7005D4B0A /* Ghost Bookmarker.app */,
+				60B2283B2A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */,
+				60B228452A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60B2281E2A712BB7005D4B0A /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				60B2281F2A712BB7005D4B0A /* AppDelegate.swift */,
+				60B228212A712BB7005D4B0A /* SceneDelegate.swift */,
+				60B228232A712BB7005D4B0A /* LaunchScreen.storyboard */,
+				60B228262A712BB7005D4B0A /* Main.storyboard */,
+				60B228292A712BB7005D4B0A /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		60B2282F2A712BB7005D4B0A /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				60B228302A712BB7005D4B0A /* AppDelegate.swift */,
+				60B228322A712BB7005D4B0A /* Main.storyboard */,
+				60B228352A712BB7005D4B0A /* Info.plist */,
+				60B228362A712BB7005D4B0A /* Ghost Bookmarker.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		60B2283F2A712BB7005D4B0A /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				60B228402A712BB7005D4B0A /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		60B228492A712BB7005D4B0A /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				60B2284A2A712BB7005D4B0A /* Info.plist */,
+				60B2284B2A712BB7005D4B0A /* Ghost Bookmarker.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		60B2286A2A712BB7005D4B0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60B2286B2A712BB7005D4B0A /* dist */,
+				60B2286C2A712BB7005D4B0A /* _metadata */,
+				60B2286D2A712BB7005D4B0A /* icons */,
+				60B2286E2A712BB7005D4B0A /* manifest.json */,
+				60B2286F2A712BB7005D4B0A /* pages */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60B2281B2A712BB7005D4B0A /* Ghost Bookmarker (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B228602A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker (iOS)" */;
+			buildPhases = (
+				60B228182A712BB7005D4B0A /* Sources */,
+				60B228192A712BB7005D4B0A /* Frameworks */,
+				60B2281A2A712BB7005D4B0A /* Resources */,
+				60B2285F2A712BB7005D4B0A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B2283E2A712BB7005D4B0A /* PBXTargetDependency */,
+			);
+			name = "Ghost Bookmarker (iOS)";
+			productName = "Ghost Bookmarker (iOS)";
+			productReference = 60B2281C2A712BB7005D4B0A /* Ghost Bookmarker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60B2282D2A712BB7005D4B0A /* Ghost Bookmarker (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B228672A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker (macOS)" */;
+			buildPhases = (
+				60B2282A2A712BB7005D4B0A /* Sources */,
+				60B2282B2A712BB7005D4B0A /* Frameworks */,
+				60B2282C2A712BB7005D4B0A /* Resources */,
+				60B228662A712BB7005D4B0A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60B228482A712BB7005D4B0A /* PBXTargetDependency */,
+			);
+			name = "Ghost Bookmarker (macOS)";
+			productName = "Ghost Bookmarker (macOS)";
+			productReference = 60B2282E2A712BB7005D4B0A /* Ghost Bookmarker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60B2283A2A712BB7005D4B0A /* Ghost Bookmarker Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B2285C2A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker Extension (iOS)" */;
+			buildPhases = (
+				60B228372A712BB7005D4B0A /* Sources */,
+				60B228382A712BB7005D4B0A /* Frameworks */,
+				60B228392A712BB7005D4B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ghost Bookmarker Extension (iOS)";
+			productName = "Ghost Bookmarker Extension (iOS)";
+			productReference = 60B2283B2A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		60B228442A712BB7005D4B0A /* Ghost Bookmarker Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60B228632A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker Extension (macOS)" */;
+			buildPhases = (
+				60B228412A712BB7005D4B0A /* Sources */,
+				60B228422A712BB7005D4B0A /* Frameworks */,
+				60B228432A712BB7005D4B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ghost Bookmarker Extension (macOS)";
+			productName = "Ghost Bookmarker Extension (macOS)";
+			productReference = 60B228452A712BB7005D4B0A /* Ghost Bookmarker Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60B228092A712BB6005D4B0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					60B2281B2A712BB7005D4B0A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					60B2282D2A712BB7005D4B0A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					60B2283A2A712BB7005D4B0A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					60B228442A712BB7005D4B0A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 60B2280C2A712BB6005D4B0A /* Build configuration list for PBXProject "Ghost Bookmarker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60B228082A712BB6005D4B0A;
+			productRefGroup = 60B2281D2A712BB7005D4B0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60B2281B2A712BB7005D4B0A /* Ghost Bookmarker (iOS) */,
+				60B2282D2A712BB7005D4B0A /* Ghost Bookmarker (macOS) */,
+				60B2283A2A712BB7005D4B0A /* Ghost Bookmarker Extension (iOS) */,
+				60B228442A712BB7005D4B0A /* Ghost Bookmarker Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60B2281A2A712BB7005D4B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B2284E2A712BB7005D4B0A /* Icon.png in Resources */,
+				60B228252A712BB7005D4B0A /* LaunchScreen.storyboard in Resources */,
+				60B2284C2A712BB7005D4B0A /* Main.html in Resources */,
+				60B228522A712BB7005D4B0A /* Script.js in Resources */,
+				60B228562A712BB7005D4B0A /* Assets.xcassets in Resources */,
+				60B228282A712BB7005D4B0A /* Main.storyboard in Resources */,
+				60B228502A712BB7005D4B0A /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B2282C2A712BB7005D4B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B2284F2A712BB7005D4B0A /* Icon.png in Resources */,
+				60B228512A712BB7005D4B0A /* Style.css in Resources */,
+				60B228342A712BB7005D4B0A /* Main.storyboard in Resources */,
+				60B228532A712BB7005D4B0A /* Script.js in Resources */,
+				60B228572A712BB7005D4B0A /* Assets.xcassets in Resources */,
+				60B2284D2A712BB7005D4B0A /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B228392A712BB7005D4B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B228782A712BB7005D4B0A /* manifest.json in Resources */,
+				60B228792A712BB7005D4B0A /* pages in Resources */,
+				60B228772A712BB7005D4B0A /* icons in Resources */,
+				60B228752A712BB7005D4B0A /* dist in Resources */,
+				60B228762A712BB7005D4B0A /* _metadata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B228432A712BB7005D4B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B228732A712BB7005D4B0A /* manifest.json in Resources */,
+				60B228742A712BB7005D4B0A /* pages in Resources */,
+				60B228722A712BB7005D4B0A /* icons in Resources */,
+				60B228702A712BB7005D4B0A /* dist in Resources */,
+				60B228712A712BB7005D4B0A /* _metadata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60B228182A712BB7005D4B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B228542A712BB7005D4B0A /* ViewController.swift in Sources */,
+				60B228202A712BB7005D4B0A /* AppDelegate.swift in Sources */,
+				60B228222A712BB7005D4B0A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B2282A2A712BB7005D4B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B228552A712BB7005D4B0A /* ViewController.swift in Sources */,
+				60B228312A712BB7005D4B0A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B228372A712BB7005D4B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B228582A712BB7005D4B0A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B228412A712BB7005D4B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60B228592A712BB7005D4B0A /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60B2283E2A712BB7005D4B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60B2283A2A712BB7005D4B0A /* Ghost Bookmarker Extension (iOS) */;
+			targetProxy = 60B2283D2A712BB7005D4B0A /* PBXContainerItemProxy */;
+		};
+		60B228482A712BB7005D4B0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60B228442A712BB7005D4B0A /* Ghost Bookmarker Extension (macOS) */;
+			targetProxy = 60B228472A712BB7005D4B0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60B2280F2A712BB6005D4B0A /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60B228102A712BB6005D4B0A /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		60B228232A712BB7005D4B0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60B228242A712BB7005D4B0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		60B228262A712BB7005D4B0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60B228272A712BB7005D4B0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60B228322A712BB7005D4B0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60B228332A712BB7005D4B0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60B2285A2A712BB7005D4B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60B2285B2A712BB7005D4B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		60B2285D2A712BB7005D4B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TGSD9ST4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker-ios2.Extension";
+				PRODUCT_NAME = "Ghost Bookmarker Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60B2285E2A712BB7005D4B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TGSD9ST4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker-ios2.Extension";
+				PRODUCT_NAME = "Ghost Bookmarker Extension";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60B228612A712BB7005D4B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TGSD9ST4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker-ios2";
+				PRODUCT_NAME = "Ghost Bookmarker";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60B228622A712BB7005D4B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4TGSD9ST4A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker-ios2";
+				PRODUCT_NAME = "Ghost Bookmarker";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60B228642A712BB7005D4B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Ghost Bookmarker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B7XRZ9FCH2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker2.Extension";
+				PRODUCT_NAME = "Ghost Bookmarker Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		60B228652A712BB7005D4B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Ghost Bookmarker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B7XRZ9FCH2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker2.Extension";
+				PRODUCT_NAME = "Ghost Bookmarker Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		60B228682A712BB7005D4B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Ghost Bookmarker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B7XRZ9FCH2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker2";
+				PRODUCT_NAME = "Ghost Bookmarker";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		60B228692A712BB7005D4B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Ghost Bookmarker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B7XRZ9FCH2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Ghost Bookmarker";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typeofweb.Ghost-Bookmarker2";
+				PRODUCT_NAME = "Ghost Bookmarker";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60B2280C2A712BB6005D4B0A /* Build configuration list for PBXProject "Ghost Bookmarker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B2285A2A712BB7005D4B0A /* Debug */,
+				60B2285B2A712BB7005D4B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B2285C2A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B2285D2A712BB7005D4B0A /* Debug */,
+				60B2285E2A712BB7005D4B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B228602A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B228612A712BB7005D4B0A /* Debug */,
+				60B228622A712BB7005D4B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B228632A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B228642A712BB7005D4B0A /* Debug */,
+				60B228652A712BB7005D4B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60B228672A712BB7005D4B0A /* Build configuration list for PBXNativeTarget "Ghost Bookmarker (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60B228682A712BB7005D4B0A /* Debug */,
+				60B228692A712BB7005D4B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60B228092A712BB6005D4B0A /* Project object */;
+}

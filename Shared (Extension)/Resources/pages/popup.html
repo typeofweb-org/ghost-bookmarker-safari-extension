@@ -1,0 +1,95 @@
+<html class="overflow-hidden">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Ghost Bookmarker</title>
+        <link rel="stylesheet" href="/dist/styles.css" />
+
+        <style>
+          #loader {
+            animation: spin .5s linear infinite;
+          }
+
+          @keyframes spin {
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+
+          .loading #loading {
+            display: flex;
+          }
+
+          .loading #submitButton {
+            display: none;
+          }
+        </style>
+    </head>
+    <body class="py-4 px-6 min-h-[200px] w-[400px] space-y-6">
+        <h1 class="text-center text-2xl font-bold tracking-tight text-gray-900">Ghost Bookmarker</h1>
+        <form class="space-y-6 " id="addLinkForm">
+
+            <div>
+                <label class="block text-sm font-medium leading-6 text-gray-900" for="url">URL</label>
+                <input class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-gray-800/[.15] focus-visible:border-gray-700 text-sm sm:leading-6" type="url" name="url" id="url" required />
+            </div>
+
+            <div>
+                <label for="note" class="block text-sm font-medium leading-6 text-gray-900 mb-1">Add a note <span class="inline-flex items-center rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-800">Optional</span>
+                </label>
+
+                <textarea rows="4" name="note" id="note" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none focus-visible:ring focus-visible:ring-gray-800/[.15] focus-visible:border-gray-700 text-sm sm:leading-6"></textarea>
+            </div>
+
+            <button id="submitButton" type="submit" class="flex w-full justify-center rounded-md bg-base px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-darkgrey focus:outline-none focus-visible:ring focus-visible:ring-gray-800/[.15] focus-visible:border-gray-700">Add link to Ghost</button>
+
+            <button id="loading" type="button" class="hidden w-full justify-center items-center gap-x-1.5 rounded-md bg-base px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-darkgrey focus:outline-none focus-visible:ring focus-visible:ring-gray-800/[.15] focus-visible:border-gray-700">
+              Saving
+
+              <svg id="loader" class="-mr-0.5 h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor"><title>circle anim</title><g fill='#40413F' className='nc-icon-wrapper'><g className='nc-loop-circle-16-icon-f'><path d='M8 16a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8zM8 2a6 6 0 1 0 6 6 6.006 6.006 0 0 0-6-6z' fill='#D4D4D4'></path><path d='M8 0v2a6.006 6.006 0 0 1 6 6h2a8.009 8.009 0 0 0-8-8z' data-color='color-2'></path></g></g></svg>
+
+            </button>
+        </form>
+
+        <div id="success" class="hidden rounded-md bg-green-50 p-4">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+                </svg>
+
+              </div>
+              <div class="ml-3">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-sm font-medium text-green-800">Link added!</h3>
+                </div>
+                <div class="mt-2 text-sm text-green-700">
+                  <p>Visit <span class="underline" id="postUrl">Bookmarked links</span> to check it out.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="error" class="hidden rounded-md bg-red-50 p-4">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-sm font-medium text-red-800">There was an error adding your link to your Ghost site.</h3>
+                <div class="mt-2 text-sm text-red-700">
+                  <div id="errorList" class="space-y-1">
+                    <p>Confirm the information is correct on the <button data-id="options" class="underline">options page</button>.</p>
+                    <p><a href="#" target="_blank" class="underline">Check out the FAQ for more help.</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <button data-id="options" type="button" class="flex justify-center w-full rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-gray-800/[.15] focus-visible:border-gray-700">Options &rarr;</button>
+
+        <script src="/dist/popup.js"></script>
+    </body>
+</html>

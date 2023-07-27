@@ -1,0 +1,40 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/logo-128.png",
+         "16": "icons/logo-16.png",
+         "32": "icons/logo-32.png",
+         "48": "icons/logo-48.png"
+      },
+      "default_popup": "pages/popup.html",
+      "default_title": "Ghost Bookmarker"
+   },
+   "background": {
+      "service_worker": "dist/background.js",
+      "type": "module"
+   },
+   "commands": {
+      "bookmark_command": {
+         "description": "Add a bookmark to Ghost",
+         "suggested_key": {
+            "default": "Ctrl+Shift+P"
+         }
+      }
+   },
+   "description": "Use Ghost Bookmarker to easily add links and notes to a post, straight from your browser.",
+   "host_permissions": [ "https://*.ghost.io/*", "https://*.ghost.org/*", "https://*.ghost.is/*" ],
+   "icons": {
+      "128": "icons/logo-128.png",
+      "16": "icons/logo-16.png",
+      "32": "icons/logo-32.png",
+      "48": "icons/logo-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnRvFDVZX2cisNkdLrmM/t3n/eG9ckYBypOGYGa4hj/MV2BgStOwexdaEl2dgGV5So5VDjxSXtMy89Vyzfi3tLqs4SKa99aA/atfYokXgw9IQztIluxPWsNMDZmeCKp3Jv9kmHO1DUPffpdwJNXYCrJN7ymhdjqFGDVNz360CUv3KiCdmzQXE0G0xwF5OHNs6nKr2lHkQN4kYUjQMsuWbHRQM8gmG/xhRtu7WrveqlBMwAEn+Kpz6FX6AB/6RCFLiyQIn50tQULzDKRJl2Vohdz4SOI9e6yw/1xehPjobZSjdW2AoX8QLcv5J6aw4wRvBrFUVIHdIl/zlEcDYcWfawwIDAQAB",
+   "manifest_version": 3,
+   "name": "Ghost Bookmarker",
+   "optional_host_permissions": [ "https://*/*" ],
+   "options_page": "pages/options.html",
+   "permissions": [ "storage", "activeTab", "declarativeNetRequest", "contextMenus", "notifications", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1.2"
+}
