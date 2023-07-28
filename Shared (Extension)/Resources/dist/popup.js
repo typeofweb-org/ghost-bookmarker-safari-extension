@@ -20093,6 +20093,7 @@ async function setUrl() {
     const tab = tabs[0];
     link = cleanUpUrl(tab.url);
     linkInput.value = link;
+    document.getElementById('note').value = tab.title || '';
 }
 
 setUrl();
